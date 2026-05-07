@@ -1,4 +1,13 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "max-age=31536000, immutable" },
+        { "key": "Content-Encoding", "value": "gzip" }
+      ]
+    }
+  ]
 }
